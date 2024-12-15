@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Basic styling*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.search-background {
+  background-image: url(../../public/bg-image.png);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: green !important;
+  font-size: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: green !important;
+}
+
+/*
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+*/
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-pagination-bullet {
+    width: 5px !important;
+    height: 5px !important;
+  }
+}
